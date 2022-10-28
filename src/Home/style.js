@@ -3,6 +3,7 @@ import { ReactComponent as Logo } from "../imgs/Logo.svg";
 import { ReactComponent as Busket } from "../imgs/Busket.svg";
 import { ReactComponent as Trustpilot } from "../imgs/trustpilot-logo.svg";
 import Bg from "../imgs/bg.png";
+import Bg2 from "../imgs/bg2.png";
 
 const Top = styled.div`
   width: 100%;
@@ -132,4 +133,49 @@ Wrapper1.Numbers = styled.div`
   margin-top: 10px;
 `;
 
-export { Top, Navbar, TDLogo, MenuItem, OrderIcon, OrderWrap, Wrapper1 };
+const Wrapper2 = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(${Bg2});
+  background-size: cover;
+  padding: 120px;
+`;
+
+Wrapper2.Text = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+Wrapper2.Title = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 55px;
+  letter-spacing: 1.65px;
+  color: #35b8be;
+  margin-bottom: 29px;
+`;
+
+Wrapper2.Paragraph = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  color: #546285;
+`;
+
+export {
+  Top,
+  Navbar,
+  TDLogo,
+  MenuItem,
+  OrderIcon,
+  OrderWrap,
+  Wrapper1,
+  Wrapper2,
+};
