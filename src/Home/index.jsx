@@ -4,13 +4,18 @@ import {
   Navbar,
   OrderIcon,
   OrderWrap,
+  Section,
   TDLogo,
   Top,
   Wrapper1,
   Wrapper2,
+  Wrapper3,
 } from "./style";
 import Img1 from "../imgs/img1.png";
 import Img2 from "../imgs/img2.png";
+import Img3 from "../imgs/img3.png";
+import Img4 from "../imgs/img4.png";
+import Img5 from "../imgs/img5.png";
 
 export const Home = () => {
   return (
@@ -61,6 +66,36 @@ export const Home = () => {
         </Wrapper2.Text>
         <img src={Img2} alt="Image2" />
       </Wrapper2>
+      <Wrapper3>
+        <Wrapper2.Title>How it works.</Wrapper2.Title>
+        <Section>
+          <div className="center">
+            <img src={Img3} alt="Image3" />
+            <Section.Title>Adapt your menu items</Section.Title>
+            <Section.Text>
+              Easily adapt your menu using the <br /> webflow CMS and allow
+              <br /> customers to browse your items.
+            </Section.Text>
+          </div>
+          <div className="center">
+            <img src={Img4} alt="Image4" />
+            <Section.Title>Accept online orders & takeout</Section.Title>
+            <Section.Text>
+              Let your customers order and pay <br /> via the powerful ecommerce
+              system, <br /> or simple let them call your store.
+            </Section.Text>
+          </div>
+          <div className="center">
+            <img src={Img5} alt="Image5" />
+            <Section.Title>Manage delivery or takeout</Section.Title>
+            <Section.Text>
+              Manage your own logistics and <br /> take orders simply through
+              the <br />
+              ecommerce system.
+            </Section.Text>
+          </div>
+        </Section>
+      </Wrapper3>
     </div>
   );
 };

@@ -169,6 +169,48 @@ Wrapper2.Paragraph = styled.div`
   color: #546285;
 `;
 
+const Wrapper3 = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 130px 0;
+`;
+
+const Section = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  .center {
+    text-align: center;
+  }
+`;
+
+Section.Title = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.66px;
+  color: #08090a;
+  margin: 48px 0 15px 0;
+`;
+
+Section.Text = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #546285;
+`;
+
 export {
   Top,
   Navbar,
@@ -178,4 +220,6 @@ export {
   OrderWrap,
   Wrapper1,
   Wrapper2,
+  Wrapper3,
+  Section,
 };
