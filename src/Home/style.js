@@ -4,6 +4,7 @@ import { ReactComponent as Busket } from "../imgs/Busket.svg";
 import { ReactComponent as Trustpilot } from "../imgs/trustpilot-logo.svg";
 import Bg from "../imgs/bg.png";
 import Bg2 from "../imgs/bg2.png";
+import Bg3 from "../imgs/bg3.png";
 
 const Top = styled.div`
   width: 100%;
@@ -211,6 +212,65 @@ Section.Text = styled.div`
   color: #546285;
 `;
 
+const Wrapper4 = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 150px 130px;
+  background-image: url(${Bg3});
+  background-size: cover;
+  align-items: center;
+`;
+
+Wrapper4.Title = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: 1.65px;
+  color: #35b8be;
+`;
+
+Wrapper4.Text = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  color: #546285;
+  margin: 26px 0 50px 0;
+`;
+
+Wrapper4.Button = styled.button`
+  width: 147px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(97, 114, 131, 0.2);
+  border-radius: 6px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #222222;
+  cursor: pointer;
+
+  :active {
+    background: #35b8be;
+    color: #ffffff;
+  }
+
+  :hover {
+    background: #35b8be;
+    color: #ffffff;
+  }
+`;
+
 export {
   Top,
   Navbar,
@@ -222,4 +282,5 @@ export {
   Wrapper2,
   Wrapper3,
   Section,
+  Wrapper4,
 };

@@ -10,6 +10,7 @@ import {
   Wrapper1,
   Wrapper2,
   Wrapper3,
+  Wrapper4,
 } from "./style";
 import Img1 from "../imgs/img1.png";
 import Img2 from "../imgs/img2.png";
@@ -96,6 +97,18 @@ export const Home = () => {
           </div>
         </Section>
       </Wrapper3>
+      <Wrapper4>
+        <Wrapper4.Title>Browse our menu</Wrapper4.Title>
+        <Wrapper4.Text>
+          Use our menu to place an order online, or <span>phone</span> our store
+          <br /> to place a pickup order. Fast and fresh food.
+        </Wrapper4.Text>
+        <Section>
+          <Wrapper4.Button>Burgers</Wrapper4.Button>
+          <Wrapper4.Button>Sides</Wrapper4.Button>
+          <Wrapper4.Button>Drinks</Wrapper4.Button>
+        </Section>
+      </Wrapper4>
     </div>
   );
 };
